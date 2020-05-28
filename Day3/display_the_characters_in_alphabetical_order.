@@ -1,0 +1,15 @@
+import java.util.*;
+class Main
+{
+    public static void main (String[] args)
+    {
+        Scanner d= new Scanner(System.in);
+        char i1=d.next().charAt(0);
+        char i2=d.next().charAt(0);
+        if (item1>item2)
+            System.out.println(i2+" , "+i1);
+       
+        else
+            System.out.println(i2+" , "+i2);
+    }
+}
