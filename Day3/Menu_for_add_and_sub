@@ -1,37 +1,37 @@
 import java.util.Scanner;
 
-public class Assignment20 {
+public class hello {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		
 		System.out.println("1. Add\n2. Sub");
-		int choice = sc.nextInt();
+		int choice = s.nextInt();
 		
-		int operand1;
-		int operand2;
-		int result;
+		int op1;
+		int op2;
+		int res;
 		
 		if (choice == 1) {
 			System.out.println("Enter first operand: ");
-			operand1 = sc.nextInt();
+			ope1 = s.nextInt();
 			System.out.println("Enter second operand: ");
-			operand2 = sc.nextInt();
-			result = operand1 + operand2;
+			op2 = s.nextInt();
+			res = op1 + op2;
 		} else {
 			System.out.println("Enter first operand: ");
-			operand1 = sc.nextInt();
+			op1 = s.nextInt();
 			System.out.println("Enter second operand: ");
-			operand2 = sc.nextInt();
-			result = operand1 - operand2;
+			op2 = s.nextInt();
+			res = op1 - op2;
 		}
 		
 		System.out.println("Result: " + result);
 		
 		System.out.println("Do you want to continue? Y or N");
 		
-		sc.nextLine();		
-		choice = sc.nextLine().charAt(0);
+		s.nextLine();		
+		choice = s.nextLine().charAt(0);
 		
 		if (choice == 'Y' || choice == 'y') main(args);
 		
